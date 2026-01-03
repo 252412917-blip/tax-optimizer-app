@@ -47,7 +47,7 @@ const App: React.FC = () => {
             <Sparkles className="w-6 h-6 ml-2 text-indigo-400" />
           </h1>
           <p className="text-slate-500 max-w-lg text-lg leading-relaxed">
-            为中国高净值及专业人士量身定制，通过多维组合算法实现工资薪金与奖金的最优分配。
+            输入您的年度收入及扣除数据，我们将通过算法为您计算出节税效果最好的年终奖分配方案。
           </p>
         </header>
 
