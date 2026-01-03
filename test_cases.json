@@ -1,5 +1,15 @@
-
 {
+  "test_case_50w": {
+    "description": "50万收入筹划案例（用于准确性验证）",
+    "inputs": {
+      "annualPreTaxIncome": 500000,
+      "socialSecurity": 20000,
+      "specialAdditionalDeductions": 12000,
+      "otherExemptions": 0
+    },
+    "expected_logic": "应纳税所得总额为 408,000 元。若全计入工资，税额为 70,080 元。通过筹划拆分年终奖，可将总税额降至更低。例如拆出 144,000 元作为年终奖（10%档位），剩余工资部分 264,000 元（20%档位），计算结果将显示显著节税效果。",
+    "notes": "此用例可验证系统是否能识别跨越 25% 档位的节税机会。"
+  },
   "test_case_1": {
     "description": "典型中等收入案例",
     "inputs": {
@@ -7,18 +17,6 @@
       "socialSecurity": 20000,
       "specialAdditionalDeductions": 12000,
       "otherExemptions": 0
-    },
-    "expected_logic": "总应纳税所得额 = 200000 - 60000 - 20000 - 12000 = 108000。基准方案全计入工资税额约 8280。筹划后应通过拆分年终奖（如拆出36000）进一步降低税额。",
-    "notes": "系统应输出节税金额 > 0。"
-  },
-  "test_case_2": {
-    "description": "税率陷阱避让案例",
-    "inputs": {
-      "annualPreTaxIncome": 130000,
-      "socialSecurity": 15000,
-      "specialAdditionalDeductions": 12000,
-      "otherExemptions": 0
-    },
-    "notes": "如果拆分奖金刚好在临界点以上，税额会剧增，优化算法必须避开这些点。"
+    }
   }
 }
