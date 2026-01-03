@@ -118,7 +118,7 @@ const TaxForm: React.FC<TaxFormProps> = ({ onCalculate }) => {
             type="submit"
             className="group relative w-full sm:w-auto min-w-[320px] bg-slate-900 hover:bg-indigo-600 text-white font-black py-5 px-10 rounded-[1.5rem] transition-all duration-300 shadow-2xl shadow-slate-900/20 hover:shadow-indigo-500/40 transform hover:-translate-y-1 flex items-center justify-center space-x-4"
           >
-            <span className="text-lg tracking-tight">生成精算筹划报告</span>
+            <span className="text-lg tracking-tight">生成筹划结果</span>
             <ArrowRightCircle className="w-6 h-6 transform group-hover:translate-x-1 transition-transform" />
           </button>
           
